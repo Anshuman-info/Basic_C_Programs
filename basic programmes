@@ -351,3 +351,48 @@ void main()
     printf("Max Term = %d",max);
 }
 
+#include <stdio.h>
+//max of three numbers using if else
+void main()
+{
+	int max,a,b,c;
+	printf("Enter Three Numbers -");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b && a>c)
+	{
+		printf("Max Term is a = %d",a);
+	}
+	else if(b>a && b>c)
+	{
+		printf("Max Term is b = %d",b);
+	}
+	else
+	{
+		printf("Max Term is c = %d",c);
+	}
+}
+
+#include <stdio.h>
+//max of three numbers using if else(nested)
+void main()
+{
+	int max,a,b,c;
+	printf("Enter Three Numbers -");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b)
+	{
+	    if(a>c)
+		printf("Max Term is a = %d",a);
+	}
+	if(b>a)
+	{
+	    if(b>c)
+		printf("Max Term is b = %d",b);
+	}
+	else
+	{
+		printf("Max Term is c = %d",c);
+	}
+}
+
+
