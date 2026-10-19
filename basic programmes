@@ -339,5 +339,15 @@ int main() {
     return 0;
 }
 
+// max of three numbers using ternary
 
+#include <stdio.h>
+void main()
+{
+    int max,a,b,c;
+    printf("Enter Three Numbers -");
+    scanf("%d%d%d",&a,&b,&c);
+    max=(a>b)?(a>c)?a:c:(b>c)?b:c;
+    printf("Max Term = %d",max);
+}
 
