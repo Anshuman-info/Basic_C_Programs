@@ -425,3 +425,31 @@ void main()
     printf("NOT STRONG NUMBER");
 }}
 
+
+// Automorphic
+
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+    int d,i=0,n,n1,k,r;
+    printf("Enter A Number-");
+    scanf("%d",&n);
+    n1=n;
+    while(n!=0)
+    {
+       i+=1;
+       n=n/10;
+    }
+    d=pow(10,i);
+    r=n1*n1;
+    k=r%d;
+    if(n1==k)
+    {
+    printf("Automorphic");
+        }
+        else
+        {
+        printf("Not Automorphic");
+        }}
+//
