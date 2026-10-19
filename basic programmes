@@ -396,3 +396,32 @@ void main()
 }
 
 
+// Strong Number
+
+#include <stdio.h>
+void main()
+{
+    int a=0,s=0,r,f,b=1,c,i,n1,n;
+    printf("Enter A Number-");
+    scanf("%d",&n);
+    n1=n;
+    while(n!=0)
+    {
+        f=1;
+        r=n%10;
+        for(i=1;i<=r;i++)
+        {
+           f=f*i; 
+        }
+        s=s+f;
+        n=n/10;
+    }
+    if(s==n1)
+    {
+      printf("STRONG NUMBER");
+    }
+    else
+    {
+    printf("NOT STRONG NUMBER");
+}}
+
